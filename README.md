@@ -1,5 +1,5 @@
 # QssDemos
-Qt各控件的样式
+QSS of Qt Controls
 
 Control-Name|Sub-Controls|Pseudo-States
 -|-|-
