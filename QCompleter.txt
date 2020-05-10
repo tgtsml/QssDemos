@@ -1,0 +1,10 @@
+QComboBox，QLineEdit自动补全下拉框样式设置：
+
+QStringList strList;
+QCompleter *completer = new QCompleter(strList, this);
+comboBox->addItems(strList);
+comboBox->setCompleter(completer);
+QAbstractItemView  *popupView = completer->popup();
+popupView->setStyleSheet("QAbstractItemView{font-size:18px;} QAbstractItemView::item{min-height:45px;max-height:45px;}");
+
+这里的样式似乎必须单独设置

@@ -1,0 +1,25 @@
+QTableView{
+    border:none;
+    font-size:18px;
+    background-color:rgb(242,245,252);
+    selection-background-color:rgb(28,92,176);
+    selection-color:white;
+    alternate-background-color:rgb(234,238,249);
+}
+
+QHeaderView{
+    background-color:transparent;
+    border:none;
+}
+
+QHeaderView::section{
+    background-color:rgb(179,197,220);
+    border-top:0px solid gray;
+    border-right:1px solid black;
+    border-bottom:2px solid black;
+    border-left:0px solid gray;
+}
+
+QHeaderView::section:horizontal{
+    height:40px;
+}

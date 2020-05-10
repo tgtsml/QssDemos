@@ -1,0 +1,47 @@
+要点：
+	1. 控件底色；
+	2. 滑块底色；
+	3. 滑槽底色；
+	4. 滑块前、后滑槽底色
+
+注意：滑块和前后滑槽的高度（横向）或宽度（纵向）由滑槽决定，如果需要突出显示，需要将margin或padding指定为负值
+
+//vertical
+QSlider::vertical{
+background:lightblue;
+min-width:30px;
+max-width:30px;
+}
+QSlider::groove:vertical {
+background:qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgb(0, 200, 0), stop:0.5 rgb(0, 200, 200), stop:0.8 rgb(200, 200, 0), stop:1 red);
+width:10px;
+}
+QSlider::handle:vertical {
+background:white;
+height: 20px;
+border-radius:10px;
+margin:0px -5px;
+}
+
+//horizontal
+QSlider::Horizontal{
+background:lightblue;
+min-height:30px;
+max-height:30px;
+}
+QSlider::add-page:Horizontal{
+background-color: gray;
+}
+QSlider::sub-page:Horizontal {
+background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(255,0,255), stop:0.5 rgb(0,255,255), stop:1 rgb(255,255,0));
+}
+QSlider::groove:Horizontal {
+background:transparent;
+height:10px;
+}
+QSlider::handle:Horizontal {
+background-color:white;
+width:20px;
+margin: -5px 0px;
+border-radius:10px;
+}

@@ -1,0 +1,109 @@
+QScrollBar:vertical{
+    width:50px;
+    padding-top:44px;
+    padding-bottom:44px;
+    background-color:rgb(168, 186, 230);
+}
+
+QScrollBar::handle:vertical{
+    width:48px;
+    min-height:50px;
+    background:qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 rgb(222,233,255), stop:1 rgb(164,186,237));
+    border:1px solid gray;
+    image:url(:/ver.png);
+}
+
+QScrollBar::sub-line:vertical,QScrollBar::add-line:vertical{
+    background-color:transparent;
+    width:50px;
+    height:44px;
+    subcontrol-origin: margin;
+}
+
+QScrollBar::sub-line:vertical{
+    subcontrol-position: top;
+}
+
+QScrollBar::add-line:vertical{
+    subcontrol-position: bottom;
+}
+
+QScrollBar::up-arrow:vertical,QScrollBar::down-arrow:vertical{
+    width: 48px;
+    height: 42px;
+    border:1px solid gray;
+}
+
+QScrollBar::up-arrow:vertical{
+    background:url(:/up-arrow.png);
+}
+
+QScrollBar::down-arrow:vertical{
+    background:url(:/down-arrow.png);
+}
+
+QScrollBar::up-arrow:vertical:hover,QScrollBar::down-arrow:vertical:hover{
+    border-top:1px solid green;
+    border-left:1px solid green;
+    border-right:1px solid white;
+    border-bottom:1px solid white;
+}
+
+QScrollBar::sub-page:vertical, QScrollBar::add-page:vertical{
+    background:rgb(223, 232, 250);
+}
+
+QScrollBar:horizontal{
+    height:40px;
+    padding-left:40px;
+    padding-right:40px;
+    background-color:rgb(168, 186, 230);
+}
+
+QScrollBar::handle:horizontal{
+    height:38px;
+    min-width:50px;
+    background:qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgb(222,233,255), stop:1 rgb(164,186,237));
+    border:1px solid gray;
+    image:url(:/hor.png);
+}
+
+QScrollBar::sub-line:horizontal,QScrollBar::add-line:horizontal{
+    background-color:transparent;
+    width:40px;
+    height:40px;
+    subcontrol-origin: margin;
+}
+
+QScrollBar::sub-line:horizontal{
+    subcontrol-position: left;
+}
+
+QScrollBar::add-line:horizontal{
+    subcontrol-position: right;
+}
+
+QScrollBar::left-arrow:horizontal,QScrollBar::right-arrow:horizontal{
+    width: 38px;
+    height: 38px;
+    border:1px solid gray;
+}
+
+QScrollBar::left-arrow:horizontal{
+    background:url(:/left-arrow.png);
+}
+
+QScrollBar::right-arrow:horizontal{
+    background:url(:/right-arrow.png);
+}
+
+QScrollBar::left-arrow:horizontal:hover,QScrollBar::right-arrow:horizontal:hover{
+    border-top:1px solid green;
+    border-left:1px solid green;
+    border-right:1px solid white;
+    border-bottom:1px solid white;
+}
+
+QScrollBar::sub-page:horizontal, QScrollBar::add-page:horizontal{
+    background:rgb(223, 232, 250);
+}
