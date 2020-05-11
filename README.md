@@ -1,5 +1,5 @@
 # QssDemos
-QSS of Qt Controls
+Qt控件样式设置
 
 - 边框<br>
 border<br>
